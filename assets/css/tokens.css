@@ -1,0 +1,76 @@
+:root {
+  /* ── NORD PALETTE ── */
+  /* Polar Night */
+  --nord0:  #2e3440;
+  --nord1:  #3b4252;
+  --nord2:  #434c5e;
+  --nord3:  #4c566a;
+  /* Snow Storm */
+  --nord4:  #d8dee9;
+  --nord5:  #e5e9f0;
+  --nord6:  #eceff4;
+  /* Frost */
+  --nord7:  #8fbcbb;
+  --nord8:  #88c0d0;
+  --nord9:  #81a1c1;
+  --nord10: #5e81ac;
+  /* Aurora */
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  /* ── SEMANTIC COLORS ── */
+  --bg:       var(--nord0);
+  --bg2:      var(--nord1);
+  --bg3:      var(--nord2);
+  --fg:       var(--nord6);
+  --fg-dim:   var(--nord4);
+  --fg-mute:  var(--nord4);
+  --fg2:      var(--nord5);
+  --accent:   var(--nord8);
+  --accent-glow: rgba(136, 192, 208, 0.3);
+  --border:   var(--nord3);
+  --border-b: var(--nord2);
+  --frost:    var(--nord7);
+  --frost2:   var(--nord9);
+  --frost3:   var(--nord10);
+  --yellow:   var(--nord13);
+  --purple:   var(--nord15);
+  --green:    var(--nord14);
+  --red:      var(--nord11);
+  --orange:   var(--nord12);
+  --accent-warm: #8ad0d8;
+
+  /* ── SPACING SYSTEM (4px/8px) ── */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-9: 5rem;     /* 80px */
+
+  /* ── TYPOGRAPHY SCALE ── */
+  --text-xs: 0.65rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.875rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: clamp(1.4rem, 3vw, 2.5rem);
+
+  /* ── EFFECTS ── */
+  --glow-subtle: 0 0 10px var(--accent-glow);
+  --shadow-terminal: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --transition-base: 0.15s ease-out;
+
+  --ff: 'JetBrains Mono', 'Courier New', monospace;
+  --scanline: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0,0,0,0.008) 2px, rgba(0,0,0,0.008) 4px
+  );
+}

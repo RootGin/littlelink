@@ -1,68 +1,68 @@
 main {
   max-width: 880px;
   margin: 0 auto;
-  padding: 5.5rem 2.5rem 5rem;
+  padding: var(--space-8) var(--space-5) var(--space-8);
 }
 
 /* ── BACK LINK ── */
 .back-link {
-  display: inline-block; margin-bottom: 1.8rem;
-  font-size: 0.72rem; color: var(--fg-mute); text-decoration: none;
-  letter-spacing: 0.08em; transition: color 0.15s;
+  display: inline-block; margin-bottom: var(--space-5);
+  font-size: var(--text-sm); color: var(--fg-mute); text-decoration: none;
+  letter-spacing: 0.08em; transition: color var(--transition-base);
 }
 .back-link:hover { color: var(--accent); }
 
 /* ── PAGE HEADER ── */
-.build-header { margin-bottom: 2.5rem; }
+.build-header { margin-bottom: var(--space-6); }
 .build-header-label {
-  font-size: 0.65rem; color: var(--fg-mute);
-  letter-spacing: 0.14em; margin-bottom: 0.5rem;
-  display: flex; align-items: center; gap: 0.5rem;
+  font-size: var(--text-xs); color: var(--fg-mute);
+  letter-spacing: 0.14em; margin-bottom: var(--space-2);
+  display: flex; align-items: center; gap: var(--space-2);
 }
-.build-header-label::before { content: '##'; color: var(--yellow); margin-right: 0.25rem; }
+.build-header-label::before { content: '##'; color: var(--yellow); margin-right: var(--space-1); }
 .build-header-label::after  { content: ''; flex: 1; height: 1px; background: var(--border); }
 .build-title {
-  font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700;
-  color: var(--fg2); letter-spacing: -0.01em; margin-bottom: 0.6rem;
+  font-size: var(--text-3xl); font-weight: 700;
+  color: var(--fg2); letter-spacing: -0.01em; margin-bottom: var(--space-2);
 }
-.build-desc { font-size: 0.82rem; color: var(--fg-mute); line-height: 1.8; max-width: 560px; }
+.build-desc { font-size: var(--text-base); color: var(--fg-mute); line-height: 1.8; max-width: 560px; }
 
 /* ── PROJECT ── */
 .build-project {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
   border-bottom: 1px solid var(--border);
 }
 .build-project:last-child { border-bottom: none; }
 
 .project-head {
-  display: flex; align-items: center; gap: 0.6rem;
-  margin-bottom: 0.3rem;
+  display: flex; align-items: center; gap: var(--space-2);
+  margin-bottom: var(--space-1);
 }
 .project-num {
-  font-size: 0.65rem; color: var(--fg-mute);
-  background: var(--bg2); padding: 0.2rem 0.45rem;
+  font-size: var(--text-xs); color: var(--fg-mute);
+  background: var(--bg2); padding: var(--space-1) var(--space-2);
   border: 1px solid var(--border);
 }
 .project-name {
-  font-size: 0.85rem; font-weight: 500; color: var(--fg2);
+  font-size: var(--text-base); font-weight: 500; color: var(--fg2);
 }
 
 .project-desc {
-  font-size: 0.78rem; color: var(--fg-dim);
-  line-height: 1.7; margin: 0.6rem 0 1.5rem;
+  font-size: var(--text-sm); color: var(--fg-dim);
+  line-height: 1.7; margin: var(--space-2) 0 var(--space-4);
 }
 
 .btn-github {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   color: var(--fg2);
   text-decoration: none;
-  padding: 0.4rem 0.8rem;
+  padding: var(--space-2) var(--space-4);
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: 4px;
-  transition: all 0.15s;
+  transition: all var(--transition-base);
 }
 .btn-github:hover {
   background: var(--accent);
@@ -72,9 +72,9 @@ main {
 
 .btn-planned {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   color: var(--fg-mute);
-  padding: 0.4rem 0.8rem;
+  padding: var(--space-2) var(--space-4);
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -83,24 +83,24 @@ main {
 
 /* ── PROJECT DETAILS (items) ── */
 .project-detail {
-  display: flex; flex-direction: column; gap: 1.2rem;
+  display: flex; flex-direction: column; gap: var(--space-3);
 }
 
 .detail-item {
   background: var(--bg2);
   border: 1px solid var(--border);
-  padding: 1.2rem 1.4rem;
-  transition: border-color 0.15s;
+  padding: var(--space-4) var(--space-5);
+  transition: border-color var(--transition-base);
 }
 .detail-item:hover { border-color: var(--border-b); }
 
 .detail-label {
-  font-size: 0.8rem; font-weight: 500; color: var(--accent);
-  margin-bottom: 0.4rem;
+  font-size: var(--text-base); font-weight: 500; color: var(--accent);
+  margin-bottom: var(--space-1);
 }
 .detail-desc {
-  font-size: 0.75rem; color: var(--fg-dim); line-height: 1.7;
-  margin-bottom: 0.9rem;
+  font-size: var(--text-sm); color: var(--fg-dim); line-height: 1.7;
+  margin-bottom: var(--space-2);
 }
 
 .detail-code {
@@ -109,75 +109,13 @@ main {
   overflow-x: auto;
 }
 .detail-code pre {
-  margin: 0; padding: 0.9rem 1rem;
-  font-size: 0.72rem; line-height: 1.6;
+  margin: 0; padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm); line-height: 1.6;
   color: var(--fg-dim);
 }
 
 @media (max-width: 768px) {
-  .detail-item { padding: 1rem; }
-  .detail-code pre { font-size: 0.65rem; }
-}
-.build-project:last-child { border-bottom: none; }
-
-.project-head {
-  display: flex; align-items: center; gap: 0.6rem;
-  margin-bottom: 0.3rem;
-}
-.project-num {
-  font-size: 0.65rem; color: var(--fg-mute);
-  background: var(--bg2); padding: 0.2rem 0.45rem;
-  border: 1px solid var(--border);
-}
-.project-name {
-  font-size: 0.85rem; font-weight: 500; color: var(--fg2);
-}
-.project-link {
-  margin-left: auto;
-  font-size: 0.68rem; color: var(--accent); text-decoration: none;
-  transition: color 0.15s;
-}
-.project-link:hover { color: var(--nord7); }
-.project-desc {
-  font-size: 0.78rem; color: var(--fg-dim);
-  line-height: 1.7; margin: 0.6rem 0 1.5rem;
-}
-
-/* ── PROJECT DETAILS (items) ── */
-.project-detail {
-  display: flex; flex-direction: column; gap: 1.2rem;
-}
-
-.detail-item {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  padding: 1.2rem 1.4rem;
-  transition: border-color 0.15s;
-}
-.detail-item:hover { border-color: var(--border-b); }
-
-.detail-label {
-  font-size: 0.8rem; font-weight: 500; color: var(--accent);
-  margin-bottom: 0.4rem;
-}
-.detail-desc {
-  font-size: 0.75rem; color: var(--fg-dim); line-height: 1.7;
-  margin-bottom: 0.9rem;
-}
-
-.detail-code {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  overflow-x: auto;
-}
-.detail-code pre {
-  margin: 0; padding: 0.9rem 1rem;
-  font-size: 0.72rem; line-height: 1.6;
-  color: var(--fg-dim);
-}
-
-@media (max-width: 768px) {
-  main { padding: 4rem 1.2rem 4rem; }
-  .detail-item { padding: 1rem; }
-  .detail-code pre { font-size: 0.65rem; }
+  main { padding: var(--space-6) var(--space-4) var(--space-6); }
+  .detail-item { padding: var(--space-4); }
+  .detail-code pre { font-size: var(--text-xs); }
 }

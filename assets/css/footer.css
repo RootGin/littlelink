@@ -2,20 +2,20 @@
    FOOTER
    ════════════════════════════════════════ */
 footer {
-  padding: 2.5rem 3rem 0;
-  margin-bottom: 2rem;
+  padding: var(--space-6) var(--space-6) 0;
+  margin-bottom: var(--space-6);
 }
 .footer-inner {
   max-width: 880px; margin: 0 auto;
 }
 .footer-cols {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 2rem; padding-bottom: 2rem;
+  gap: var(--space-6); padding-bottom: var(--space-5);
 }
-.footer-col { display: flex; flex-direction: column; gap: 0.6rem; }
+.footer-col { display: flex; flex-direction: column; gap: var(--space-2); }
 .footer-col-label {
-  font-size: 0.7rem; color: var(--fg-mute);
-  margin-bottom: 0.3rem;
+  font-size: var(--text-xs); color: var(--fg-mute);
+  margin-bottom: var(--space-1);
 }
 .footer-col-label::before { content: '## '; color: var(--yellow); }
 
@@ -24,24 +24,24 @@ footer {
 
 .footer-links a,
 .footer-explore-links a {
-  display: block; font-size: 0.75rem; color: var(--fg-dim);
+  display: block; font-size: var(--text-sm); color: var(--fg-dim);
   text-decoration: none;
-  padding: 0.35rem 0;
-  transition: color 0.15s, padding-left 0.15s;
+  padding: var(--space-1) 0;
+  transition: color var(--transition-base), padding-left var(--transition-base);
 }
 .footer-links a:hover,
-.footer-explore-links a:hover { color: var(--accent); padding-left: 0.4rem; }
+.footer-explore-links a:hover { color: var(--accent); padding-left: var(--space-1); }
 .footer-links a::before,
-.footer-explore-links a::before { content: '→ '; color: var(--fg-mute); font-size: 0.65rem; }
+.footer-explore-links a::before { content: '→ '; color: var(--fg-mute); font-size: var(--text-xs); }
 
 .footer-credit {
-  border-top: 1px solid var(--border); padding: 0.9rem 0;
-  display: flex; justify-content: center; align-items: center; gap: 1rem;
-  font-size: 0.7rem; color: var(--fg-mute);
+  border-top: 1px solid var(--border); padding: var(--space-3) 0;
+  display: flex; justify-content: center; align-items: center; gap: var(--space-4);
+  font-size: var(--text-xs); color: var(--fg-mute);
 }
 .footer-year { color: var(--border-b); }
 
 @media (max-width: 768px) {
-  footer { padding: 2rem 1.2rem 0; }
-  .footer-cols { grid-template-columns: 1fr; gap: 1.5rem; }
+  footer { padding: var(--space-5) var(--space-4) 0; }
+  .footer-cols { grid-template-columns: 1fr; gap: var(--space-5); }
 }
