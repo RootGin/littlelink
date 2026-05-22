@@ -1,0 +1,139 @@
+/* ════════════════════════════════════════
+   BASE — variables, reset, typography
+   ════════════════════════════════════════ */
+
+/* ── NORD PALETTE ──
+   Polar Night:  #2e3440  #3b4252  #434c5e  #4c566a
+   Snow Storm:   #d8dee9  #e5e9f0  #eceff4
+   Frost:        #8fbcbb  #88c0d0  #81a1c1  #5e81ac
+   Aurora:       #bf616a  #d08770  #ebcb8b  #a3be8c  #b48ead
+*/
+:root {
+  --nord0:  #2e3440;
+  --nord1:  #3b4252;
+  --nord2:  #434c5e;
+  --nord3:  #4c566a;
+  --nord4:  #d8dee9;
+  --nord5:  #e5e9f0;
+  --nord6:  #eceff4;
+  --nord7:  #8fbcbb;
+  --nord8:  #88c0d0;
+  --nord9:  #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  --bg:       #2e3440;
+  --bg2:      #3b4252;
+  --bg3:      #434c5e;
+  --fg:       #d8dee9;
+  --fg2:      #eceff4;
+  --fg-dim:   #8a95a8;
+  --fg-mute:  #616e82;
+  --accent:   #88c0d0;
+  --frost2:   #81a1c1;
+  --frost3:   #5e81ac;
+  --green:    #a3be8c;
+  --yellow:   #ebcb8b;
+  --red:      #bf616a;
+  --orange:   #d08770;
+  --purple:   #b48ead;
+  --accent-warm: #8ad0d8;
+  --border:   #434c5e;
+  --border-b: #4c566a;
+
+  --ff: 'JetBrains Mono', 'Courier New', monospace;
+  --scanline: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0,0,0,0.008) 2px, rgba(0,0,0,0.008) 4px
+  );
+}
+
+/* ── RESET ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--ff);
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* CRT scanline overlay */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background: var(--scanline);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.12;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-b); }
+::-webkit-scrollbar-thumb:hover { background: var(--fg-mute); }
+
+/* ── SHARED UTILITIES ── */
+.c-accent { color: var(--accent); }
+.c-green  { color: var(--green); }
+.c-frost  { color: var(--frost2); }
+
+/* ── SECTION SHARED ── */
+section { padding: 5rem 3rem; }
+
+.section-header {
+  margin-bottom: 2.5rem;
+  max-width: 880px; margin-left: auto; margin-right: auto;
+}
+.section-label {
+  font-size: 0.7rem; color: var(--fg-mute);
+  margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;
+}
+.section-label::before { content: '##'; color: var(--yellow); margin-right: 0.25rem; }
+.section-label::after  { content: ''; flex: 1; height: 1px; background: var(--border); margin-left: 0.5rem; }
+.section-title { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 700; color: var(--fg2); letter-spacing: -0.01em; }
+
+/* ── BOX COMPONENT ── */
+.box { border: 1px solid var(--border); background: var(--bg2); }
+.box-top {
+  display: flex; align-items: center; padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--border); font-size: 0.68rem;
+  color: var(--fg-mute); letter-spacing: 0.08em; gap: 0.5rem;
+}
+.box-dots { display: flex; gap: 4px; }
+.box-dots span { width: 8px; height: 8px; border-radius: 50%; }
+.box-dots span:nth-child(1) { background: var(--red); }
+.box-dots span:nth-child(2) { background: var(--yellow); }
+.box-dots span:nth-child(3) { background: var(--green); }
+.box-title { color: var(--fg-dim); }
+.box-body { padding: 1.2rem; }
+
+/* ── BUTTONS ── */
+.btn-primary {
+  background: var(--frost3); color: var(--nord6); border: none;
+  padding: 0.6rem 1.5rem; font-family: var(--ff); font-size: 0.875rem;
+  font-weight: 700; text-decoration: none;
+  display: inline-block; transition: background 0.15s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--frost2); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent; color: var(--fg-dim); border: none;
+  border-left: 1px solid var(--border-b); padding: 0.6rem 1.5rem;
+  font-family: var(--ff); font-size: 0.875rem; font-weight: 400;
+  text-decoration: none; display: inline-block;
+  transition: color 0.15s, background 0.15s, transform 0.15s;
+}
+.btn-outline:hover { color: var(--fg2); background: var(--bg2); transform: translateY(-1px); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to   { opacity: 1; } }
+@keyframes blink  { 0%,100% { opacity: 1; } 50% { opacity: 0; } }

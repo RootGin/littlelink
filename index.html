@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gin | rootgin</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+  <!-- STATUSBAR -->
+  <div class="statusbar">
+    <span>NORMAL &nbsp;|&nbsp; index.html</span>
+    <div class="statusbar-right">
+      <span>UTF-8</span>
+      <span>LF</span>
+      <span>HTML</span>
+      <span id="sb-line">ln 1, col 1</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-left">
+      <a class="nav-logo" href="index.html">Gin</a>
+      <ul class="nav-left-links">
+        <li><a href="now/index.html">now</a></li>
+        <li><a href="misc/index.html">misc</a></li>
+        </ul>
+    </div>
+    <div class="nav-center"></div>
+    <ul class="nav-right">
+      <li><a href="build/index.html">build</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <pre class="hero-banner">╭── rootgin ────────────────────╮</pre>
+      <p class="hero-prompt" id="easter-egg"><span>~/home</span> $ whoami</p>
+      <h1 class="hero-name">Gin<span class="c-cursor"></span></h1>
+      <p class="hero-sub">
+        just someone who likes building things for the web. terminal enthusiast,
+        tea addict, occasional rabbit-hole explorer.
+      </p>
+      <div class="hero-ctas">
+        <a href="build/index.html" class="btn-primary">./build</a>
+        <a href="#explore" class="btn-outline">./explore</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/RootGin" target="_blank" rel="noopener">github</a>
+        <a href="mailto:hi@rootgin.xyz">email</a>
+        <a href="#">discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <p class="section-label">01 — about</p>
+      <h2 class="section-title">who_am_i<span class="c-accent">()</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo-box">
+        <div class="discord-profile" id="discord-profile">
+          <div class="dp-banner" id="dp-banner"></div>
+          <div class="dp-body">
+            <div class="dp-avatar-wrap">
+              <div class="dp-avatar-frame">
+                <img src="" alt="" id="dp-avatar" class="dp-avatar-img" loading="lazy">
+                <img src="" alt="" id="dp-decoration" class="dp-avatar-decoration" loading="lazy">
+                <span class="dp-status-dot" id="dp-status-dot-big"></span>
+              </div>
+            </div>
+            <div class="dp-details">
+              <span class="dp-name" id="dp-name">Gin</span>
+              <span class="dp-username" id="dp-username">@rootgin</span>
+              <span class="dp-clan" id="dp-clan"></span>
+              <span class="dp-status-label" id="dp-status-label">Loading...</span>
+              <div class="dp-badges" id="dp-badges"></div>
+              <div class="dp-activity" id="dp-activity"></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-photo-label">discord.txt</div>
+      </div>
+      <div class="about-text">
+        <p>hey, i'm <strong>Gin</strong> — someone who spends too much time in the terminal building things for the web. i like clean code, good design, and tools that just work.</p>
+        <p>you'll probably find me exploring new frameworks, breaking things just to fix them, or diving into some random tech rabbit hole.</p>
+        <p>this site is my little corner of the internet — no fluff, no tracking, just me and what i build.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- LINKS -->
+  <section id="links">
+    <div class="section-header">
+      <p class="section-label">02 — links</p>
+      <h2 class="section-title">find_me_online<span class="c-accent">()</span></h2>
+    </div>
+    <div class="links-grid">
+      <a href="https://github.com/RootGin" class="link-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        <span>github</span>
+      </a>
+      <a href="mailto:hi@rootgin.xyz" class="link-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 9L2 4"/></svg>
+        <span>email</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section id="explore">
+    <div class="section-header">
+      <p class="section-label">03 — explore</p>
+      <h2 class="section-title">continue_to_explore<span class="c-accent">()</span></h2>
+    </div>
+    <div class="explore-grid">
+
+      <a href="build/index.html" class="explore-card">
+        <div class="explore-card-top">
+          <span class="explore-num">01</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <p class="explore-title">build<span class="c-accent">/</span></p>
+        <p class="explore-desc">Stuff I build — dotfiles, projects, configs, and experiments.</p>
+        <span class="explore-link">cd ./build →</span>
+      </a>
+
+      <a href="now/index.html" class="explore-card">
+        <div class="explore-card-top">
+          <span class="explore-num">02</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <p class="explore-title">now<span class="c-accent">/</span></p>
+        <p class="explore-desc">What I'm currently learning, reading, and building.</p>
+        <span class="explore-link">cd ./now →</span>
+      </a>
+
+      <a href="misc/index.html" class="explore-card">
+        <div class="explore-card-top">
+          <span class="explore-num">03</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <p class="explore-title">misc<span class="c-accent">/</span></p>
+        <p class="explore-desc">Non‑tech creative stuff — translations, writing, and detours.</p>
+        <span class="explore-link">cd ./misc →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <span class="footer-col-label">connect</span>
+        <div class="footer-links">
+          <a href="mailto:hi@rootgin.xyz">email</a>
+          <a href="https://github.com/RootGin" target="_blank" rel="noopener">github</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">explore</span>
+        <div class="footer-explore-links">
+          <a href="build/index.html">build</a>
+          <a href="now/index.html">now</a>
+          <a href="misc/index.html">misc</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-credit">
+      <span>crafted by <span class="c-accent">Gin</span></span>
+      <span class="footer-year">2026</span>
+    </div>
+  </div></footer>
+
+  <div id="egg-overlay" class="egg-overlay hidden">
+    <pre>╭──────────────────────────────────────╮
+│                                      │
+│  Hey Jay...                          │
+│  You are fat.                        │
+│                                      │
+│  — rootgin                           │
+╰──────────────────────────────────────╯</pre>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

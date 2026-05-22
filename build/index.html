@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>build | Gin</title>
+
+  <!-- Favicon -->
+  <link rel="icon"             href="/assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon"             href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="build.css">
+</head>
+<body>
+
+  <!-- STATUSBAR -->
+  <div class="statusbar">
+    <span>NORMAL &nbsp;|&nbsp; build/index.html</span>
+    <div class="statusbar-right">
+      <span>UTF-8</span>
+      <span>LF</span>
+      <span>HTML</span>
+      <span>3 projects</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-left">
+      <a class="nav-logo" href="../index.html">Gin</a>
+      <ul class="nav-left-links">
+        <li><a href="../now/index.html">now</a></li>
+        <li><a href="../misc/index.html">misc</a></li>
+      </ul>
+    </div>
+    <div class="nav-center"></div>
+    <ul class="nav-right">
+      <li><a href="index.html" class="nav-active">build</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <a href="../index.html" class="back-link">back to home</a>
+
+    <div class="build-header">
+      <p class="build-header-label">~/build</p>
+      <h1 class="build-title">things_i_build<span class="c-accent">()</span></h1>
+      <p class="build-desc">Stuff I build, configure, and tinker with. Starting with my NixOS dotfiles — more projects coming as I make them.</p>
+    </div>
+
+    <!-- ── PROJECT: dotfiles ── -->
+    <section class="build-project">
+      <div class="project-head">
+        <span class="project-num">01</span>
+        <span class="project-name">NixOS dotfiles</span>
+      </div>
+      <p class="project-desc">My entire NixOS flake configuration — system, shell, editor, desktop, all declaratively managed.</p>
+      <a href="https://github.com/RootGin/dotfile/tree/main" target="_blank" rel="noopener" class="btn-github">github →</a>
+    </section>
+
+    <!-- ── PROJECT: portfolio ── -->
+    <section class="build-project">
+      <div class="project-head">
+        <span class="project-num">02</span>
+        <span class="project-name">Portfolio Website</span>
+      </div>
+      <p class="project-desc">The site you're looking at right now. A terminal-aesthetic portfolio built with HTML/CSS/JS.</p>
+      <a href="https://github.com/RootGin/littlelink" target="_blank" rel="noopener" class="btn-github">github →</a>
+    </section>
+
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

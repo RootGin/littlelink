@@ -1,0 +1,74 @@
+/* ════════════════════════════════════════
+   NOW PAGE
+   ════════════════════════════════════════ */
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 5.5rem 2.5rem 5rem;
+}
+
+/* ── BACK LINK ── */
+.back-link {
+  display: inline-block; margin-bottom: 1.8rem;
+  font-size: 0.72rem; color: var(--fg-mute); text-decoration: none;
+  letter-spacing: 0.08em; transition: color 0.15s;
+}
+.back-link:hover { color: var(--accent); }
+
+/* ── PAGE HEADER ── */
+.now-header { margin-bottom: 2.5rem; }
+.now-header-label {
+  font-size: 0.65rem; color: var(--fg-mute);
+  letter-spacing: 0.14em; margin-bottom: 0.5rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.now-header-label::before { content: '##'; color: var(--yellow); margin-right: 0.25rem; }
+.now-header-label::after  { content: ''; flex: 1; height: 1px; background: var(--border); }
+.now-title {
+  font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700;
+  color: var(--fg2); letter-spacing: -0.01em; margin-bottom: 0.6rem;
+}
+.now-desc { font-size: 0.82rem; color: var(--fg-mute); line-height: 1.8; max-width: 560px; }
+
+/* ── SECTIONS ── */
+.now-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.now-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.now-section-head {
+  font-size: 0.78rem; font-weight: 500;
+  color: var(--fg-mute);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.2rem;
+  display: flex; align-items: center; gap: 0.5rem;
+  text-transform: lowercase;
+}
+.now-section-head::before { content: '##'; color: var(--yellow); margin-right: 0.25rem; }
+
+.now-items {
+  display: flex; flex-direction: column; gap: 1.2rem;
+}
+
+/* ── ITEM ── */
+.now-item {
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--border);
+  transition: border-color 0.15s;
+}
+.now-item:hover { border-left-color: var(--accent); }
+.now-item-title {
+  font-size: 0.85rem; font-weight: 500; color: var(--fg2);
+  margin-bottom: 0.25rem;
+}
+.now-item-desc {
+  font-size: 0.75rem; color: var(--fg-dim); line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  main { padding: 4rem 1.2rem 4rem; }
+  .now-item { padding-left: 0.8rem; }
+}

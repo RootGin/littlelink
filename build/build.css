@@ -1,0 +1,183 @@
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 5.5rem 2.5rem 5rem;
+}
+
+/* ── BACK LINK ── */
+.back-link {
+  display: inline-block; margin-bottom: 1.8rem;
+  font-size: 0.72rem; color: var(--fg-mute); text-decoration: none;
+  letter-spacing: 0.08em; transition: color 0.15s;
+}
+.back-link:hover { color: var(--accent); }
+
+/* ── PAGE HEADER ── */
+.build-header { margin-bottom: 2.5rem; }
+.build-header-label {
+  font-size: 0.65rem; color: var(--fg-mute);
+  letter-spacing: 0.14em; margin-bottom: 0.5rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.build-header-label::before { content: '##'; color: var(--yellow); margin-right: 0.25rem; }
+.build-header-label::after  { content: ''; flex: 1; height: 1px; background: var(--border); }
+.build-title {
+  font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700;
+  color: var(--fg2); letter-spacing: -0.01em; margin-bottom: 0.6rem;
+}
+.build-desc { font-size: 0.82rem; color: var(--fg-mute); line-height: 1.8; max-width: 560px; }
+
+/* ── PROJECT ── */
+.build-project {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.build-project:last-child { border-bottom: none; }
+
+.project-head {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+.project-num {
+  font-size: 0.65rem; color: var(--fg-mute);
+  background: var(--bg2); padding: 0.2rem 0.45rem;
+  border: 1px solid var(--border);
+}
+.project-name {
+  font-size: 0.85rem; font-weight: 500; color: var(--fg2);
+}
+
+.project-desc {
+  font-size: 0.78rem; color: var(--fg-dim);
+  line-height: 1.7; margin: 0.6rem 0 1.5rem;
+}
+
+.btn-github {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--fg2);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.15s;
+}
+.btn-github:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.btn-planned {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--fg-mute);
+  padding: 0.4rem 0.8rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  opacity: 0.6;
+}
+
+/* ── PROJECT DETAILS (items) ── */
+.project-detail {
+  display: flex; flex-direction: column; gap: 1.2rem;
+}
+
+.detail-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 1.2rem 1.4rem;
+  transition: border-color 0.15s;
+}
+.detail-item:hover { border-color: var(--border-b); }
+
+.detail-label {
+  font-size: 0.8rem; font-weight: 500; color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+.detail-desc {
+  font-size: 0.75rem; color: var(--fg-dim); line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+.detail-code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  overflow-x: auto;
+}
+.detail-code pre {
+  margin: 0; padding: 0.9rem 1rem;
+  font-size: 0.72rem; line-height: 1.6;
+  color: var(--fg-dim);
+}
+
+@media (max-width: 768px) {
+  .detail-item { padding: 1rem; }
+  .detail-code pre { font-size: 0.65rem; }
+}
+.build-project:last-child { border-bottom: none; }
+
+.project-head {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+.project-num {
+  font-size: 0.65rem; color: var(--fg-mute);
+  background: var(--bg2); padding: 0.2rem 0.45rem;
+  border: 1px solid var(--border);
+}
+.project-name {
+  font-size: 0.85rem; font-weight: 500; color: var(--fg2);
+}
+.project-link {
+  margin-left: auto;
+  font-size: 0.68rem; color: var(--accent); text-decoration: none;
+  transition: color 0.15s;
+}
+.project-link:hover { color: var(--nord7); }
+.project-desc {
+  font-size: 0.78rem; color: var(--fg-dim);
+  line-height: 1.7; margin: 0.6rem 0 1.5rem;
+}
+
+/* ── PROJECT DETAILS (items) ── */
+.project-detail {
+  display: flex; flex-direction: column; gap: 1.2rem;
+}
+
+.detail-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 1.2rem 1.4rem;
+  transition: border-color 0.15s;
+}
+.detail-item:hover { border-color: var(--border-b); }
+
+.detail-label {
+  font-size: 0.8rem; font-weight: 500; color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+.detail-desc {
+  font-size: 0.75rem; color: var(--fg-dim); line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+.detail-code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  overflow-x: auto;
+}
+.detail-code pre {
+  margin: 0; padding: 0.9rem 1rem;
+  font-size: 0.72rem; line-height: 1.6;
+  color: var(--fg-dim);
+}
+
+@media (max-width: 768px) {
+  main { padding: 4rem 1.2rem 4rem; }
+  .detail-item { padding: 1rem; }
+  .detail-code pre { font-size: 0.65rem; }
+}
